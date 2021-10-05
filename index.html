@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>MinecraftMediaLibrary</title>
+  <link rel="icon" type="image/png" href="http://www.google.com/s2/favicons?domain=css-tricks.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="navbar.js"></script>
+</head>
+<body class="text-gray-800 antialiased">
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+          href="https://www.creative-tim.com/learning-lab/tailwindcss-starter-project#/presentation">
+          MinecraftMediaLibrary
+        </a>
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="text-white fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+        id="example-collapse-navbar">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="https://github.com/MinecraftMediaLibrary">
+              <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
+              <span class="lg:hidden inline-block ml-2">Star</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+      <div class="absolute top-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style="background: url(https://images.unsplash.com/photo-1582282577080-2ebf8af6ca81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)">
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-white font-semibold text-5xl">
+                We are MinecraftMediaLibrary.
+              </h1>
+              <p class="mt-4 text-lg text-gray-300">
+                We are a group of passionate developers working on media libraries and frameworks
+                to allow our users to play media easier. We love open source, and mainly work around
+                plugins, mods, addons, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-right" data-aos-delay="1200">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <i class="fas fa-broom"></i>
+                </div>
+                <h6 class="text-xl font-semibold">Clean</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Here at MinecraftMediaLibrary, we try to achieve clean code. We try our best 
+                  to maintain clean code such that our users are able to read what we are doing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="1400">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <i class="fal fa-rabbit-fast"></i>
+                </div>
+                <h6 class="text-xl font-semibold">Fast</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  We design software that is fast. In fact, our libraries and frameworks use 
+                  native libraries coded in lower languages to achieve optimal performance,
+                  while still maintaining compatability between multiple platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-left" data-aos-delay="1600">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h6 class="text-xl font-semibold">Extensive API</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  We have an extensive API, and are open to contributions. Feel free to open
+                  a pull request if you think something is wrong or should be changed!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center mt-32">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-int-right">
+            <div
+              class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              EzMediaCore
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              EzMediaCore is the leading Minecraft media library core. It contains many features,
+              including video playback, customization of images, support for native players such
+              as VLC Media Player, FFmpeg, as well as information retrieving such as our youtube-dl 
+              API. 
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              Along with mainstream features, we develop extra utilities built into the library 
+              in order to fit our users needs. For example, fast dithering algorithms, search
+              algorithms, and other sort algorithms used for our library. EzMediaCore also 
+              automatically installs JARs inside a folder, meaning you won't get a gigantic
+              JAR size when you shade the library too!
+            </p>
+            <a href="https://github.com/MinecraftMediaLibrary/EzMediaCore"
+              class="font-bold text-gray-800 mt-8">Checkout our Repository!
+            </a>
+          </div>
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+            <div
+              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <img alt="..."
+                src="emc.png"
+                class="w-full align-middle rounded-t-lg" />
+              <blockquote class="relative p-8 mb-4">
+                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                  <polygon points="-30,95 583,95 583,65" class="text-orange-500 fill-current"></polygon>
+                </svg>
+                <h4 class="text-xl font-bold text-white">
+                  Our Discord Server
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  Join our <a href="hhttps://discord.gg/qVhhbCWQQV">Discord Server</a>
+                  for updates, information, as well as meet other developers of our 
+                  libraries.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative py-20">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <img alt="..." class="max-w-full rounded-lg shadow-lg" data-aos="flip-right" data-aos-delay="1000"
+              src="https://static.spigotmc.org/img/spigot.png" />
+          </div>
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-int-left">
+            <div class="md:pr-12">
+              <div
+                class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                <i class="fas fa-rocket text-xl"></i>
+              </div>
+              <h3 class="text-3xl font-semibold">DeluxeMediaPlugin</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                DeluxeMediaPlugin is the Spigot plugin which utilizes EzMediaCore for both 
+                demonstrating how to use the library and also as a way for users to play 
+                media inside Minecraft servers without having a necessary programming 
+                knowledge. It is still in deep development, but we have a testing server 
+                on our <a href="hhttps://discord.gg/qVhhbCWQQV">Discord Server</a> if you 
+                would like to test the plugin out.
+              </p>
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-gamepad-alt"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                        Focuses on Minecraft 1.16.5 and 1.17
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-paper-plane"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Compatible with Spigot and Paper</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-code"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">In Active Development</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-20 pb-48">
+      <div class="container mx-auto px-4" data-aos="fade-in">
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold">Our Team</h2>
+            <p class="text-lg leading-relaxed m-4 text-gray-600">
+                Here is information about us, and our role on 
+                the developing team.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in">
+            <div class="px-6">
+              <img alt="..." src="https://avatars.githubusercontent.com/u/40838203?v=4"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">PulseBeat_02</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Founder, Senior Maintainer
+                </p>
+                <div class="mt-6">
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-github" href="https://github.com/PulseBeat02"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="400">
+            <div class="px-6">
+              <img alt="..." src="https://avatars.githubusercontent.com/u/35617540?v=4"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Emilyy</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Code Helper
+                </p>
+                <div class="mt-6">
+                    <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-github" href="https://github.com/emilyy-dev"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="600">
+            <div class="px-6">
+              <img alt="..." src="https://randomuser.me/api/portraits/women/82.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Conclure</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Code Helper
+                </p>
+                <div class="mt-6">
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-github" href="https://avatars.githubusercontent.com/u/63319713?v=4"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="800">
+            <div class="px-6">
+              <img alt="..." src="user.png"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Other Contributers</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Many other people contributed
+                </p>
+                <div class="mt-6">
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-github" href="https://github.com/MinecraftMediaLibrary/EzMediaCore#contributorsacknowledgements"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-20 relative block bg-gray-900">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4 lg:pt-24 lg:pb-64" data-aos="fade-in">
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold text-white">We are Interested/h2>
+            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+              Interested in working with us or helping us? Feel free to contact us 
+              if you would like to contribute to our project. You may do so via Discord 
+              or email.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap mt-12 justify-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="600">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <i class="fas fa-folder-open text-xl"></i>
+            </div>
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Open Source
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              We try to make our projects open source. However, this means paying for our 
+              own services and project necessities such as tool chains, jenkins server, etc. 
+              If you would lie to donate, feel free to donate to me on
+              <a href="https://ko-fi.com/pulsebeat_02">Kofi</a> to support me.
+            </p>
+          </div>
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="400">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <i class="fas fa-poll text-xl"></i>
+            </div>
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Contributing
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              Open a pull request on our project, suggest a feature in Discussions or Issue Report 
+              on Github, or meeting with us on Discord for improvements on the project as all valid 
+              ways to help us develop this project.
+            </p>
+          </div>
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              The more contributions people can add, the faster the plugin will be able to be 
+              released to the public.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0);">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <div class="mt-6">
+            <a href="https://www.github.com/MinecraftMediaLibrary" target="_blank"><i
+                class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-400" />
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            Copyright © 2021 MinecraftMediaLibrary
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
